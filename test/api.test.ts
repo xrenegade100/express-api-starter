@@ -1,6 +1,7 @@
-const request = require('supertest');
+process.env.NODE_ENV = 'test';
 
-const app = require('../src/app');
+import request from 'supertest';
+import app from '../src/app';
 
 describe('GET /api/v1', () => {
   it('responds with a json message', (done) => {
@@ -9,7 +10,7 @@ describe('GET /api/v1', () => {
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200, {
-        message: 'API - 👋🌎🌍🌏'
+        message: 'API - 👋🌎🌍🌏',
       }, done);
   });
 });
