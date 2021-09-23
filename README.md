@@ -1,4 +1,4 @@
-# Express API Starter
+# Express API Starter Typescript
 
 Includes API Server utilities:
 
@@ -19,6 +19,8 @@ Development utilities:
   * ☕️ Simple, flexible, fun JavaScript test framework for Node.js & The Browser ☕️
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
+* [typescript](https://www.npmjs.com/package/typescript)
+  * TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
 ## Setup
 
@@ -42,4 +44,10 @@ npm run test
 
 ```
 npm run dev
+```
+
+## Compile TS
+
+```
+npm run build
 ```
